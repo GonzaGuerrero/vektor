@@ -1,0 +1,747 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*   ----------------------------      seccion general       ----------------------------  */
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFE68), color-stop(#ffff023b), to(#FFFE68));
+  background-image: linear-gradient(to bottom, #FFFE68, #ffff023b, #FFFE68);
+}
+
+::-moz-scrollbar-track {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.151);
+}
+
+::-moz-scrollbar {
+  width: 15px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-moz-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #FFFE68, #ffff023b, #FFFE68);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 280px) {
+  header {
+    width: 100%;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  header {
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0))), url(multimedia/stars-in-night-sky.jpg);
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(multimedia/stars-in-night-sky.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    scroll-behavior: smooth;
+  }
+}
+
+.cuerpo {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.seccionLogo {
+  grid-area: "seccionLogo";
+}
+
+@media only screen and (min-width: 280px) {
+  .seccionLogo img {
+    height: 180px;
+  }
+}
+
+@media only screen and (min-width: 3750px) {
+  .seccionLogo img {
+    height: 200px;
+  }
+}
+
+.seccionRedes {
+  border: none;
+  padding: 5px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  grid-area: "seccionRedes";
+}
+
+.seccionRedes a img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 2;
+}
+
+@media only screen and (min-width: 280px) {
+  .ul__li--seleccionNavegacion {
+    font-family: 'Antonio', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    background-image: -webkit-gradient(linear, left top, right top, from(#FFFE02), color-stop(#FFFE68), to(black));
+    background-image: linear-gradient(to right, #FFFE02, #FFFE68, black);
+    font-size: 30px;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .ul__li--seleccionNavegacion {
+    font-family: 'Antonio', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    background-image: -webkit-gradient(linear, left top, right top, from(#FFFE02), color-stop(#FFFE68), to(black));
+    background-image: linear-gradient(to right, #FFFE02, #FFFE68, black);
+    font-size: 30px;
+    display: block;
+    -webkit-animation-name: cambiaTamaño3;
+            animation-name: cambiaTamaño3;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 120s;
+            animation-duration: 120s;
+  }
+  @-webkit-keyframes cambiaTamaño3 {
+    0% {
+      width: 40%;
+    }
+    1% {
+      width: 100%;
+    }
+    100% {
+      width: 40%;
+    }
+  }
+  @keyframes cambiaTamaño3 {
+    0% {
+      width: 40%;
+    }
+    1% {
+      width: 100%;
+    }
+    100% {
+      width: 40%;
+    }
+  }
+}
+
+.navegacion {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0))), url(multimedia/stars-in-night-sky.jpg);
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(multimedia/stars-in-night-sky.jpg);
+}
+
+.navegacion .navegacion__ul {
+  list-style-type: none;
+}
+
+.navegacion .navegacion__ul .ul__li:hover .ul__li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navegacion .navegacion__ul .ul__li .li__item {
+  font-size: 20px;
+  font-family: 'Antonio', sans-serif;
+  color: whitesmoke;
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.navegacion .navegacion__ul .ul__li .li__item:hover {
+  color: #FFFE02;
+  text-decoration: none;
+}
+
+.navegacion .navegacion__ul .ul__li .ul__li .ul__li__btn-group {
+  display: block;
+}
+
+.navegacion .navegacion__ul .ul__li .ul__li .ul__li__btn-group .li__menu {
+  background-color: black;
+  border: 1px solid #FFFE02;
+  color: #FFFE02;
+}
+
+.navegacion .navegacion__ul .ul__li .ul__li .ul__li__btn-group .li__menu .li__menu__item {
+  font-size: 20px;
+  font-family: 'Antonio', sans-serif;
+  color: whitesmoke;
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.navegacion .navegacion__ul .ul__li .ul__li .ul__li__btn-group .li__menu .li__menu__item:hover {
+  color: black;
+  text-decoration: none;
+  background-color: #FFFE02;
+  font-weight: bold;
+}
+
+.navegacion .navegacion__ul .ul__li .ul__li--botonPaginaPrincipal {
+  display: none;
+  position: absolute;
+  top: 182px;
+  left: 200px;
+  padding: 0px 5px;
+}
+
+.navegacion .navegacion__ul .ul__li .ul__li--botonPaginaPrincipal2 {
+  display: none;
+  position: absolute;
+  top: 182px;
+  left: 138px;
+  padding: 0px 5px;
+}
+
+/*     ----------------------------     seccion Principal   ----------------------------       */
+.portadaSticky {
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+.portadaSticky__portadaTerminal {
+  position: relative;
+}
+
+.portadaSticky__degradadoPortada {
+  background-image: -webkit-gradient(linear, bottom black, from(rgba(0, 0, 0, 0)), to(black));
+  background-image: linear-gradient(to bottom black, rgba(0, 0, 0, 0), black);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  width: 100%;
+  height: 721px;
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+}
+
+.seccionPrincipal {
+  padding-bottom: 30px;
+}
+
+section .h2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#FFFE02), color-stop(#FFFE68), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, #FFFE02, #FFFE68, rgba(0, 0, 0, 0));
+}
+
+@media only screen and (min-width: 720px) {
+  .cambiaTamaño1 {
+    -webkit-animation-name: cambiaTamaño1;
+            animation-name: cambiaTamaño1;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 120s;
+            animation-duration: 120s;
+  }
+  @-webkit-keyframes cambiaTamaño1 {
+    0% {
+      width: 100%;
+    }
+    50% {
+      width: 40%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes cambiaTamaño1 {
+    0% {
+      width: 100%;
+    }
+    50% {
+      width: 40%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  .cambiaTamaño2 {
+    -webkit-animation-name: cambiaTamaño2;
+            animation-name: cambiaTamaño2;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 120s;
+            animation-duration: 120s;
+  }
+  @-webkit-keyframes cambiaTamaño2 {
+    0% {
+      width: 40%;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 40%;
+    }
+  }
+  @keyframes cambiaTamaño2 {
+    0% {
+      width: 40%;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 40%;
+    }
+  }
+}
+
+.spanTitulo {
+  font-family: 'Antonio', sans-serif;
+  text-transform: capitalize;
+  background-color: black;
+  color: #F2E416;
+  border: 5px solid #000000;
+}
+
+.spanTitulo2 {
+  font-family: 'Antonio', sans-serif;
+  text-transform: capitalize;
+  text-decoration: underline;
+  background-color: #F2E416;
+  color: #000000;
+  padding: 5px 5px;
+}
+
+.fondoEstrellas {
+  background-image: url("multimedia/stars-in-night-sky.jpg");
+  background-repeat: repeat;
+  background-size: 100% auto;
+}
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ultimoVideoclip .ultimoVideoclip__seccionVideo {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.ultimoVideoclip .ultimoVideoclip__seccionVideo .seccionVideo__videoYoutube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 720px) {
+  .escucharEnSpotify .escucharEnSpotify__listaSpotify {
+    display: block;
+    margin: 50px auto 50px auto;
+    width: 50%;
+    min-width: 320px;
+  }
+}
+
+@media only screen and (min-width: 280px) {
+  .escucharEnSpotify .escucharEnSpotify__listaSpotify {
+    display: block;
+    margin: 50px auto 50px auto;
+    width: 310px;
+    min-width: 320px;
+  }
+}
+
+.ultimasPublicaciones .ultimasPublicaciones__seccionFacebook {
+  padding: 20px;
+}
+
+@media only screen and (min-width: 280px) {
+  .ultimasPublicaciones .ultimasPublicaciones__seccionFacebook .seccionFacebook__perfilFacebook {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .ultimasPublicaciones .ultimasPublicaciones__seccionFacebook .seccionFacebook__perfilFacebook {
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+/*  ----------------------------  seccion Banda ----------------------------    */
+.parrafoBanda {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
+  line-height: 190%;
+  border: solid 1px #F2E416;
+}
+
+.cuerpoBanda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px;
+}
+
+.columna1 {
+  width: 30%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  padding: 0px 20px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+      grid-template-areas: "foto1 foto1" "foto2 foto3" "foto2 foto4" "foto5 foto6" "foto7 foto6";
+}
+
+.columna2 {
+  width: 40%;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+.columna3 {
+  width: 30%;
+  display: -ms-grid;
+  display: grid;
+  height: auto;
+  padding: 0px 20px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+      grid-template-areas: "foto8 foto8" "foto9 foto10" "foto11 foto10" "foto12 foto13" "foto12 foto14";
+}
+
+.fotoBanda {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.fotoBanda:hover {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 2;
+}
+
+.foto1 {
+  grid-area: "foto1";
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url(vektor/vektor.jpg);
+}
+
+.foto2 {
+  grid-area: "foto2";
+  background-image: url(vektor/david\disanto.jpg);
+  -ms-grid-row: 2;
+  grid-row: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.foto3 {
+  grid-area: "foto3";
+  background-image: url(vektor/david\disanto\5.jpg);
+}
+
+.foto4 {
+  grid-area: "foto4";
+  background-image: url(vektor/david\disanto\6.jpg);
+}
+
+.foto5 {
+  grid-area: "foto5";
+  background-image: url(vektor/blake\anderson.jpg);
+}
+
+.foto6 {
+  grid-area: "foto6";
+  background-image: url(vektor/blake\anderson\5.jpg);
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/ 6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.foto7 {
+  grid-area: "foto7";
+  background-image: url(vektor/blake\anderson\4.jpg);
+}
+
+.foto8 {
+  grid-area: "foto8";
+  background-image: url(vektor/vektor\9.jpg);
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.foto9 {
+  grid-area: "foto9";
+  background-image: url(vektor/erik\nelson\2.jpg);
+}
+
+.foto10 {
+  grid-area: "foto10";
+  background-image: url(vektor/erik\nelson.jpg);
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.foto11 {
+  grid-area: "foto11";
+  background-image: url(vektor/erik\nelson\3.jpg);
+}
+
+.foto12 {
+  grid-area: "foto12";
+  background-image: url(vektor/frank\chin.jpg);
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+}
+
+.foto13 {
+  grid-area: "foto13";
+  background-image: url(vektor/frank\chin\2.jpg);
+}
+
+.foto14 {
+  grid-area: "foto14";
+  background-image: url(vektor/frank\chin\3.jpg);
+}
+
+resaltar {
+  color: #F2E416;
+}
+
+#carouselBanda .carousel-item img {
+  max-width: 90%;
+  height: 700px;
+  margin: 20px auto;
+}
+
+.modal .modal-content {
+  background-color: #000000;
+  color: #F2E416;
+}
+
+.modal .carousel-item img {
+  max-width: 100%;
+  height: 500px;
+}
+
+.parrafoBanda a:hover {
+  text-decoration: none;
+}
+
+/* ---------------------------- sección Discografía  ----------------------------    */
+td ol li {
+  list-style-position: inside;
+  list-style-type: upper-roman;
+}
+
+.seccionDiscografia {
+  background-image: url(multimedia/stars-in-night-sky.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+.seccionDiscografia td {
+  text-align: center;
+}
+
+th {
+  background-color: #000000;
+  color: #F2E416;
+}
+
+.fontRoboto {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* ----------------------------   seccion Tienda   ----------------------------   */
+.tienda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 10px 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(multimedia/stars-in-night-sky.jpg);
+}
+
+.tienda .tienda__articulo {
+  margin: 5px 5px;
+  border: double 5px #F2E416;
+}
+
+.tienda .tienda__articulo .articulo__imagen {
+  width: 400px;
+}
+
+/*  ----------------------------       seccion Contacto     ----------------------------   */
+.formulario {
+  font-size: 20px;
+  font-family: 'Antonio', sans-serif;
+  color: whitesmoke;
+  margin: 10px;
+  text-align: center;
+}
+
+.formulario .formulario__titulo {
+  font-style: italic;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  font-size: 30px;
+}
+
+.formulario .formulario__boton {
+  padding: 5px 5px;
+  background-color: black;
+  color: whitesmoke;
+  border: 1px solid #F2E416;
+  border-radius: 5px;
+}
+
+.formulario .formulario__boton:hover {
+  background-color: #F2E416;
+  color: black;
+}
+
+/*   ----------------------------     seccion Footer     ----------------------------     */
+.footer {
+  text-align: center;
+  display: block;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(0, 0, 0, 0.342)), color-stop(#101C2B), color-stop(#16264D), to(#1A3C67)), url(multimedia/stars-in-night-sky.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.342) 30%, #101C2B, #16264D, #1A3C67), url(multimedia/stars-in-night-sky.jpg);
+}
+
+.footer__terminosDeServicio {
+  color: #F2E416;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer__terminosDeServicio:hover {
+  text-decoration: none;
+  color: #FFFE68;
+}
+
+.footer__redes .redes__img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 2;
+}
+
+.footer__volverArriba {
+  color: #F2E416;
+  text-decoration: none;
+  float: right;
+  margin-right: 10px;
+  font-family: 'Antonio', sans-serif;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=estilos.css.map */
