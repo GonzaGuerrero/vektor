@@ -242,12 +242,38 @@ html {
   padding: 0px 5px;
 }
 
+@media only screen and (max-width: 767px) {
+  .navegacion .navegacion__ul .ul__li .ul__li--botonPaginaPrincipal {
+    top: 220px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navegacion .navegacion__ul .ul__li .ul__li--botonPaginaPrincipal {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
 .navegacion .navegacion__ul .ul__li .ul__li--botonPaginaPrincipal2 {
   display: none;
   position: absolute;
   top: 182px;
   left: 138px;
   padding: 0px 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .navegacion .navegacion__ul .ul__li .ul__li--botonPaginaPrincipal2 {
+    top: 220px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navegacion .navegacion__ul .ul__li .ul__li--botonPaginaPrincipal2 {
+    display: -ms-grid;
+    display: grid;
+  }
 }
 
 /*     ----------------------------     seccion Principal   ----------------------------       */
@@ -467,15 +493,18 @@ th {
   width: 100%;
   height: auto;
   padding: 10px 10px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 30px 20px;
   background-image: url(multimedia/stars-in-night-sky.jpg);
 }
 
@@ -488,7 +517,23 @@ th {
   width: 400px;
 }
 
+@media only screen and (max-width: 415px) {
+  .tienda .tienda__articulo .articulo__imagen {
+    width: 200px;
+  }
+}
+
+.verMas {
+  text-align: center;
+}
+
 /*  ----------------------------       seccion Contacto     ----------------------------   */
+@media only screen and (max-width: 540px) {
+  .contactoTitulo {
+    text-align: center;
+  }
+}
+
 .formulario {
   font-size: 20px;
   font-family: 'Antonio', sans-serif;

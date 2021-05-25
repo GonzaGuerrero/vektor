@@ -17,10 +17,31 @@
     justify-content: space-around;
     margin: 10px;   
 }
+@media only screen and (min-width:1024px) {
+    .columna1{
+        display: grid;
+    }
+    .columna2{
+        width: 40%;
+    }
+    .columna3{
+        display: grid;
+    }
+}
+@media only screen and (max-width:1023px){
+    .columna1{
+        display: none;
+    }
+    .columna2{
+        width: 80%;
+    }
+    .columna3{
+        display: none;
+    }
+}
 .columna1{
     width: 30%;
     height: auto;
-    display: grid;
     
     padding: 0px 20px;
     column-gap: 10px;  
@@ -33,14 +54,13 @@
                          "foto7 foto6";
 }
 .columna2{
-    width: 40%;
     padding: 20px;
     margin: 0 10px;     
 }
 .columna3{
     width: 30%;
-    display: grid;
     height: auto;
+
     padding: 0px 20px;
     column-gap: 10px;  
     row-gap: 10px;           
@@ -149,10 +169,9 @@ resaltar{
 }
   
 
-
 #carouselBanda .carousel-item img{
     max-width: 90%;
-    height: 700px;
+    height: auto; 
     margin: 20px auto;
 
 }

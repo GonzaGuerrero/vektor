@@ -214,6 +214,18 @@ header{
                     left: 200px;
                     padding: 0px 5px; 
                 }
+
+                @media only screen and (max-width:767px) {
+                    .ul__li--botonPaginaPrincipal{
+                         top: 220px;
+                    }  
+                }
+                @media only screen and (max-width:768px) {
+                    .ul__li--botonPaginaPrincipal{
+                         display: grid;
+                    }  
+                }
+
                 .ul__li--botonPaginaPrincipal2{
                     display: none;
                     position: absolute;
@@ -222,6 +234,16 @@ header{
                     padding: 0px 5px;   
                 }
 
+                @media only screen and (max-width:767px) {
+                    .ul__li--botonPaginaPrincipal2{
+                         top: 220px;
+                    }  
+                }
+                @media only screen and (max-width:768px) {
+                    .ul__li--botonPaginaPrincipal2{
+                         display: grid;
+                    }  
+                }
 
         }
         
@@ -443,9 +465,11 @@ th{
     width: 100%;
     height: auto;
     padding: 10px 10px;
-    flex-wrap: wrap;
-    flex-flow: column;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
+    align-content: center;
+    padding: 30px 20px;
     background-image: url(multimedia/stars-in-night-sky.jpg);
 
     .tienda__articulo{ 
@@ -457,17 +481,27 @@ th{
             width: 400px; 
             
         }
+        @media only screen and (max-width:415px){
+            .articulo__imagen{
+                width: 200px;
+            }
+        }
+        
     }
-    
 }
 
-
-
+.verMas{
+    text-align: center;
+}
 
 /*  ----------------------------       seccion Contacto     ----------------------------   */
 
+@media only screen and (max-width:540px){
 
-
+    .contactoTitulo{
+                text-align: center;
+    }
+}
 
 .formulario{
     font-size: 20px;
