@@ -86,36 +86,133 @@
 
     <h1> <span class="spanTitulo"> Discografía de la Banda </span></h1>
     <br>
-<section class="seccionDiscografia">  
-    <table border=2 cellpadding="0" cellspacing="10" class="fontRoboto" width=100% >
-       <thead>
-            <tr>
-              <th>Nombre del disco</th>
-              <th>Fecha de publicación</th>
-              <th>Lista de canciones</th>
-              <th>Portada</th>
-            </tr>
-        </thead>    
-       <tbody>
-            <tr>
-                <td>Nucleus (Demo)</td>
-                <td>2004</td>
-                <td>
-                    <ol>
-                        <li>Oblivion</li>
-                        <li>Venus Project</li>
-                        <li>Destroying the Cosmos</li>
-                        <li>Accelerating Universe</li>
-                        <li>Asteroid</li>
-            
-                    </ol>
-                </td> 
-                <td> <img src="../multimedia/nucleus.jpg" alt="nucleus" height="150" > </td>
-            </tr>
-            <tr>
-            <td>Demolition (Demo)</td>
-            <td>2006</td>
-            <td>
+
+<section class="sliderDiscografia">
+
+    <div class="sliderDiscografia__elemento"> 
+        <a class="elemento__enlace" href="#nucleus"> 
+            <img class="enlace__imagen" src="../multimedia/nucleus.jpg" alt="nucleus"  > 
+            <div class="enlace__titulo">
+                <p>Nucleus</p>
+            </div>
+        </a>
+    </div>
+    
+    <div class="sliderDiscografia__elemento"> 
+        <a class="elemento__enlace" href="#demolition"> 
+            <img class="enlace__imagen" src="../multimedia/demolition.jpg" alt="Demolition"  > 
+            <div class="enlace__titulo">
+                <p>Demolition </p>
+            </div>
+        </a>
+    </div>
+
+    <div class="sliderDiscografia__elemento"> 
+        <a class="elemento__enlace" href="#hungerForViolence"> 
+            <img class="enlace__imagen" src="../multimedia/hunger for violence.jpg" alt="Hunger for Violence"  > 
+            <div class="enlace__titulo">
+                <p>Hunger for Violence </p>
+            </div>
+        </a>
+    </div>
+
+    <div class="sliderDiscografia__elemento"> 
+        <a class="elemento__enlace" href="#blackFuture">
+            <img class="enlace__imagen" src="../multimedia/black future.jpg" alt="Black Future"  >   
+            <div class="enlace__titulo">
+                <p>Black Future</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="sliderDiscografia__elemento"> 
+        <a class="elemento__enlace" href="#outerIsolation"> 
+            <img class="enlace__imagen" src="../multimedia/outer isolation.jpg" alt="Outer Isolation"  > 
+            <div class="enlace__titulo">
+                <p>Outer Isolation</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="sliderDiscografia__elemento"> 
+        <a class="elemento__enlace" href="#terminalRedux"> 
+            <img class="enlace__imagen" src="../multimedia/terminal redux.jpg" alt="Terminal Redux"  > 
+            <div class="enlace__titulo">
+                <p>Terminal Redux</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="sliderDiscografia__elemento"> 
+        <a class="elemento__enlace" href="#transmissionsOfChaos"> 
+            <img class="enlace__imagen" src="../multimedia/transmissions.jpg" alt="Transmissions of Chaos"  > 
+            <div class="enlace__titulo">
+                <p>Transmissions of Chaos </p>
+            </div>
+        </a>
+    </div>
+
+</section>
+
+<section class="seccionDiscografia">
+    <div class="seccionDiscografia__album fontRoboto">
+        <div class="album__titulo" id="nucleus">
+            <p>Nucleus </p>
+            <p>Demo</p>
+            <p>2004</p>
+        </div>
+        <div class="album__info">
+            <div class="listaAside">
+                <div class="listaAside__titulo">Miembros</div>
+                <ul>
+                    <li class="listaAside__amarillo"> Guitarras, bajo y voz</li>
+                    <li>David DiSanto</li>
+                    <li class="listaAside__amarillo">Batería</li>
+                    <li>Willy Redshaw</li>
+                </ul>
+            </div>
+            <div class="portadaAlbum">
+                <img src="../multimedia/nucleus.jpg" alt="Nucleus">
+            </div>
+            <div class="listaAside">
+                <div class="listaAside__titulo">Canciones</div>
+                <ol>
+                    <li>Oblivion</li>
+                    <li>Venus Project</li>
+                    <li>Destroying the Cosmos</li>
+                    <li>Accelerating Universe</li>
+                    <li>Asteroid</li>
+        
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="seccionDiscografia__album fontRoboto">
+        <div class="album__titulo" id="demolition">
+            <p>Demolition </p>
+            <p>Demo</p>
+            <p>2006</p>
+        </div>
+        <div class="album__info">
+            <div class="listaAside">
+                <div class="listaAside__titulo">Miembros</div>
+                <ul>
+                    <li class="listaAside__amarillo"> Guitarra y voz</li>
+                    <li>David DiSanto</li>
+                    <li class="listaAside__amarillo">Guitarra</li>
+                    <li>Erik Nelson</li>
+                    <li class="listaAside__amarillo">Bajo</li>
+                    <li>Mike Tozzi</li>
+                    <li class="listaAside__amarillo">Batería</li>
+                    <li>Adam Anderson</li>
+                </ul>
+            </div>
+            <div class="portadaAlbum">
+                <img src="../multimedia/demolition.jpg" alt="Demolition">
+            </div>
+            <div class="listaAside">
+                <div class="listaAside__titulo">Canciones</div>
                 <ol>
                     <li>Spiral Galaxy</li>
                     <li>Oblivion</li>
@@ -126,92 +223,197 @@
                     <li>Moonbase</li>
                     <li>Tetrastructural Minds</li>
                 
+                </ol> 
+            </div>
+        </div>
+    </div>
+
+    <div class="seccionDiscografia__album fontRoboto">
+        <div class="album__titulo" id="hungerForViolence">
+            <p>Hunger for Violence </p>
+            <p>Demo</p>
+            <p>30/5/2007</p>
+        </div>
+        <div class="album__info">
+            <div class="listaAside">
+                <div class="listaAside__titulo">Miembros</div>
+                <ul>
+                    <li class="listaAside__amarillo"> Guitarra y voz</li>
+                    <li>David DiSanto</li>
+                    <li class="listaAside__amarillo">Guitarra</li>
+                    <li>Erik Nelson</li>
+                    <li class="listaAside__amarillo">Bajo</li>
+                    <li>Frank Chin</li>
+                    <li class="listaAside__amarillo">Batería</li>
+                    <li>Kian Ahmad</li>
+                </ul>
+            </div>
+            <div class="portadaAlbum">
+                <img src="../multimedia/hunger for violence.jpg" alt="Hunger for Violence">
+            </div>
+            <div class="listaAside">
+                <div class="listaAside__titulo">Canciones</div>
+                <ol>
+                    <li>Hunger for Violence</li>
+                    <li>Accelerating Universe</li>
+                 </ol> 
+            </div>
+        </div>
+    </div>
+
+    <div class="seccionDiscografia__album fontRoboto">
+        <div class="album__titulo" id="blackFuture">
+            <p>Black Future </p>
+            <p>17/11/2009</p>
+        </div>
+        <div class="album__info">
+            <div class="listaAside">
+                <div class="listaAside__titulo">Miembros</div>
+                <ul>
+                    <li class="listaAside__amarillo"> Guitarra y voz</li>
+                    <li>David DiSanto</li>
+                    <li class="listaAside__amarillo">Guitarra</li>
+                    <li>Erik Nelson</li>
+                    <li class="listaAside__amarillo">Bajo</li>
+                    <li>Frank Chin</li>
+                    <li class="listaAside__amarillo">Batería</li>
+                    <li>Blake Anderson</li>
+                </ul>
+            </div>
+            <div class="portadaAlbum">
+                <img src="../multimedia/black future.jpg" alt="Black Future">
+            </div>
+            <div class="listaAside">
+                <div class="listaAside__titulo">Canciones</div>
+                <ol>
+                    <li>Black Future</li>
+                    <li>Oblivion</li>
+                    <li>Destroying the Cosmos</li>
+                    <li>Forests of Legend</li>
+                    <li>Hunger for Violence</li>
+                    <li>Deoxyribonucleic Acid</li>
+                    <li>Asteroid</li>
+                    <li>Dark Nebula</li>
+                    <li>Accelerating Universe</li>
                 </ol>
-            </td> 
-            <td> <img src="../multimedia/demolition.jpg" alt="demolition" height="150" > </td>
-            </tr>
-            <tr>
-                <td>Hunger for Violence (Demo)</td>
-                <td>30/5/2007</td>
-                <td>
-                    <ol>
-                        <li>Hunger for Violence</li>
-                        <li>Accelerating Universe</li>
-                        
-                </td> 
-                <td> <img src="../multimedia/hunger for violence.jpg" alt="hunger for violence" height="150" > </td>
-            </tr>
-            <tr>
-               <td>Black Future</td>
-               <td>17/11/2009</td>
-               <td>
-                   <ol>
-                       <li>Black Future</li>
-                       <li>Oblivion</li>
-                       <li>Destroying the Cosmos</li>
-                       <li>Forests of Legend</li>
-                       <li>Hunger for Violence</li>
-                       <li>Deoxyribonucleic Acid</li>
-                       <li>Asteroid</li>
-                       <li>Dark Nebula</li>
-                       <li>Accelerating Universe</li>
-                   </ol>
-               </td> 
-               <td> <img src="../multimedia/black future.jpg" alt="black future" height="150" > </td>
-            </tr>
-            <tr>
-                <td>Outer Isolation</td>
-               <td>22/11/2011</td>
-               <td>
-                   <ol>
-                       <li>Cosmic Cortex</li>
-                       <li>Echoless Chamber</li>
-                       <li>Dying World</li>
-                       <li>Tetrastructural Minds</li>
-                       <li>Venus Project</li>
-                       <li>Dark Creations, Dead Creators</li>
-                       <li>Fast Paced Society</li>
-                       <li>Outer Isolation</li>   
-                    </ol>   
-                </td>
-                <td> <img src="../multimedia/outer isolation.jpg" alt="outer isolation" height="150" > </td>     
-            </tr>
-            <tr>
-                <td>Terminal Redux</td>
-               <td>6/5/2016</td>
-               <td>
-                   <ol>
-                       <li>Charging the Void</li>
-                       <li>Cygnus Terminal</li>
-                       <li>LCD (Liquid Crystal Disease)</li>
-                       <li>Mountains Above The Sun</li>
-                       <li>Ultimate Artificer</li>
-                       <li>Pteropticon</li>
-                       <li>Psychotropia</li>
-                       <li>Pillars of Sand</li>  
-                       <li>Collapse</li>
-                       <li>Recharging the Void </li> 
-                    </ol>   
-                </td>
-                <td> <img src="../multimedia/terminal redux.jpg" alt="terminal redux" height="150" > </td>     
-            </tr>
-            <tr>
-                <td>Transmissions of Chaos (Split)</td>
-               <td>25/2/2021</td>
-               <td>
-                   <ol>
-                       <li>Activate (Vektor)</li>
-                       <li>Dead By Dawn (Vektor)</li>
-                       <li>Decypher (Cryptosis)</li>
-                       <li>Prospect of Immortality (Cryptosis)</li>
-                       
-                    </ol>   
-                </td> 
-                <td> <img src="../multimedia/transmissions.jpg" alt="transmissions of chaos" height="150" > </td>  
-            </tr>
-       </tbody>
-    </table>
-</section>   
+            </div>
+        </div>
+    </div>
+
+    <div class="seccionDiscografia__album fontRoboto">
+        <div class="album__titulo" id="outerIsolation">
+            <p>Outer Isolation </p>
+            <p>22/11/2011</p>
+        </div>
+        <div class="album__info">
+            <div class="listaAside">
+                <div class="listaAside__titulo">Miembros</div>
+                <ul>
+                    <li class="listaAside__amarillo"> Guitarra y voz</li>
+                    <li>David DiSanto</li>
+                    <li class="listaAside__amarillo">Guitarra</li>
+                    <li>Erik Nelson</li>
+                    <li class="listaAside__amarillo">Bajo</li>
+                    <li>Frank Chin</li>
+                    <li class="listaAside__amarillo">Batería</li>
+                    <li>Blake Anderson</li>
+                </ul>
+            </div>
+            <div class="portadaAlbum">
+                <img src="../multimedia/outer isolation.jpg" alt="Outer Isolation">
+            </div>
+            <div class="listaAside">
+                <div class="listaAside__titulo">Canciones</div>
+                <ol>
+                    <li>Cosmic Cortex</li>
+                    <li>Echoless Chamber</li>
+                    <li>Dying World</li>
+                    <li>Tetrastructural Minds</li>
+                    <li>Venus Project</li>
+                    <li>Dark Creations, Dead Creators</li>
+                    <li>Fast Paced Society</li>
+                    <li>Outer Isolation</li>   
+                 </ol>   
+            </div>
+        </div>
+    </div>
+
+    <div class="seccionDiscografia__album fontRoboto">
+        <div class="album__titulo" id="terminalRedux">
+            <p>Terminal Redux </p>
+            <p>6/5/2016</p>
+        </div>
+        <div class="album__info">
+            <div class="listaAside">
+                <div class="listaAside__titulo">Miembros</div>
+                <ul>
+                    <li class="listaAside__amarillo"> Guitarra y voz</li>
+                    <li>David DiSanto</li>
+                    <li class="listaAside__amarillo">Guitarra</li>
+                    <li>Erik Nelson</li>
+                    <li class="listaAside__amarillo">Bajo</li>
+                    <li>Frank Chin</li>
+                    <li class="listaAside__amarillo">Batería</li>
+                    <li>Blake Anderson</li>
+                </ul>
+            </div>
+            <div class="portadaAlbum">
+                <img src="../multimedia/terminal redux.jpg" alt="Terminal Redux">
+            </div>
+            <div class="listaAside">
+                <div class="listaAside__titulo">Canciones</div>
+                <ol>
+                    <li>Charging the Void</li>
+                    <li>Cygnus Terminal</li>
+                    <li>LCD (Liquid Crystal Disease)</li>
+                    <li>Mountains Above The Sun</li>
+                    <li>Ultimate Artificer</li>
+                    <li>Pteropticon</li>
+                    <li>Psychotropia</li>
+                    <li>Pillars of Sand</li>  
+                    <li>Collapse</li>
+                    <li>Recharging the Void </li> 
+                 </ol> 
+            </div>
+        </div>
+    </div>
+
+    <div class="seccionDiscografia__album fontRoboto">
+        <div class="album__titulo" id="transmissionsOfChaos">
+            <p>Transmissions of Chaos </p>
+            <p>EP</p>
+            <p>25/2/2021</p>
+        </div>
+        <div class="album__info">
+            <div class="listaAside">
+                <div class="listaAside__titulo">Miembros</div>
+                <ul>
+                    <li class="listaAside__amarillo"> Guitarra y voz</li>
+                    <li>David DiSanto</li>
+                    <li class="listaAside__amarillo">Guitarra</li>
+                    <li>Erik Nelson</li>
+                    <li class="listaAside__amarillo">Bajo</li>
+                    <li>Stephen Coon</li>
+                    <li class="listaAside__amarillo">Batería</li>
+                    <li>Mike Ohlson</li>
+                </ul>
+            </div>
+            <div class="portadaAlbum">
+                <img src="../multimedia/transmissions.jpg" alt="Transmissions of Chaos">
+            </div>
+            <div class="listaAside">
+                <div class="listaAside__titulo">Canciones</div>
+                <ol>
+                    <li>Activate (Vektor)</li>
+                    <li>Dead By Dawn (Vektor)</li>
+                    <li>Decypher (Cryptosis)</li>
+                    <li>Prospect of Immortality (Cryptosis)</li>
+                    
+                 </ol>   
+            </div>
+        </div>
+    </div>
+</section>  
 
 <footer class="footer fontRoboto" >
     <br>

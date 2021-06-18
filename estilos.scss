@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Geostar+Fill&family=Major+Mono+Display&family=Montserrat+Subrayada&family=Press+Start+2P&family=VT323&family=Wallpoet&display=swap');
 
 
 *{
@@ -430,25 +431,160 @@ iframe{
 
 /* ---------------------------- sección Discografía  ----------------------------    */
 
-td ol li{
-    list-style-position: inside;
-    list-style-type: upper-roman;
+.sliderDiscografia{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 30px 20px;
 
+    .sliderDiscografia__elemento{ 
+        margin: 5px 5px;
+        position: relative;
+        width: 150px;
+        height: 154px;
+
+        .elemento__enlace{
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            &:hover{
+
+                .enlace__titulo{
+                    display:block;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    z-index: 2;
+                }
+                .enlace__imagen{
+                    filter: blur(3px) grayscale(25%);   
+                    
+                    transform: scale(1.05);
+                }
+            }
+            .enlace__imagen {
+                height: 150px;   
+                transition: all .3s;  
+            }
+            .enlace__titulo{
+                display: block;
+                position: absolute;
+                top: 60px ;
+                width: 150px;
+                margin: 5px 5px;
+                z-index: -3;
+                text-align: center;
+                color: #a5e92ff6;
+                text-shadow: 2px 2px 5px #2b5c16, 2px -2px 5px #2b5c16, -2px 2px 5px #2b5c16, -2px -2px 5px #2b5c16 ;
+                font-family: 'Wallpoet', cursive;
+                transition: font-size .5s ease;
+                overflow: hidden;
+                
+            }
+        }   
+    }
 }
+
+
 .seccionDiscografia{
     background-image: url(multimedia/stars-in-night-sky.jpg);
     background-repeat: repeat;
-
     background-size: 100%;
-}
-.seccionDiscografia td{
-    text-align: center;
-}
-    
-th{
-    background-color:#000000 ;
-    color:#F2E416;
+
+    &__album{
+        display: flex;
+        flex-flow: column nowrap;
+         
+
+        .album__titulo{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            font-family: 'Wallpoet', cursive;
+            font-size: 30px;
+            color: #a5e92ff6;
+            text-shadow: 2px 2px 5px #2b5c16, 2px -2px 5px #2b5c16, -2px 2px 5px #2b5c16, -2px -2px 5px #2b5c16 ;
+            letter-spacing: 5px;
+            p{
+                text-align: center;
+            }
+
+        }
+
+        .album__info{
+
+            padding: 40px;
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+
+            .portadaAlbum{
+                width: 40%;
+                min-width: 275px;
+                
+                img{
+                    width: 100%;
+                }
+
+            }
+            .listaAside{
+                width: 20%;
+                height: 90%;
+                list-style-position: inside;
+                border: solid 1px #F2E416;  
+                padding: 40px 10px;
+                position: relative;
+
+
+                &__titulo{
+                    padding: 5px;
+                    position: absolute;
+                    text-align: center;
+                    width: 90%;
+                    top: -15px;
+                    background-color: #F2E416;
+                    border: solid 1px #F2E416;
+                    color: black;
+                    font-weight: bold;
+                    
+                }
+
+                ul{
+                    list-style: none;
+                    text-align: center;
+                }
+                ol{
+                    list-style-type: upper-roman;
+                    text-align: center;
+                }
+                &__amarillo{
+                    color: #F2E416;
+                }
+            }
+
+        }
+
+        @media only screen and (max-width:768px){
+            .album__info{
+                display: flex;
+                flex-flow: column;
+                .listaAside{
+                    width: 80%;
+                    font-size: 15px;
+                }
+                .portadaAlbum{
+                    margin: 20px;
+                }
+            }     
+        }
+
     }
+}
 .fontRoboto{
     font-family: 'Roboto Mono', monospace;
 }

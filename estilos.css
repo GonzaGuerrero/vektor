@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Geostar+Fill&family=Major+Mono+Display&family=Montserrat+Subrayada&family=Press+Start+2P&family=VT323&family=Wallpoet&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -461,9 +462,81 @@ iframe {
 }
 
 /* ---------------------------- sección Discografía  ----------------------------    */
-td ol li {
-  list-style-position: inside;
-  list-style-type: upper-roman;
+.sliderDiscografia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 10px 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 30px 20px;
+}
+
+.sliderDiscografia .sliderDiscografia__elemento {
+  margin: 5px 5px;
+  position: relative;
+  width: 150px;
+  height: 154px;
+}
+
+.sliderDiscografia .sliderDiscografia__elemento .elemento__enlace {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sliderDiscografia .sliderDiscografia__elemento .elemento__enlace:hover .enlace__titulo {
+  display: block;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.sliderDiscografia .sliderDiscografia__elemento .elemento__enlace:hover .enlace__imagen {
+  -webkit-filter: blur(3px) grayscale(25%);
+          filter: blur(3px) grayscale(25%);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.sliderDiscografia .sliderDiscografia__elemento .elemento__enlace .enlace__imagen {
+  height: 150px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.sliderDiscografia .sliderDiscografia__elemento .elemento__enlace .enlace__titulo {
+  display: block;
+  position: absolute;
+  top: 60px;
+  width: 150px;
+  margin: 5px 5px;
+  z-index: -3;
+  text-align: center;
+  color: #a5e92ff6;
+  text-shadow: 2px 2px 5px #2b5c16, 2px -2px 5px #2b5c16, -2px 2px 5px #2b5c16, -2px -2px 5px #2b5c16;
+  font-family: 'Wallpoet', cursive;
+  -webkit-transition: font-size .5s ease;
+  transition: font-size .5s ease;
+  overflow: hidden;
 }
 
 .seccionDiscografia {
@@ -472,13 +545,115 @@ td ol li {
   background-size: 100%;
 }
 
-.seccionDiscografia td {
+.seccionDiscografia__album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.seccionDiscografia__album .album__titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Wallpoet', cursive;
+  font-size: 30px;
+  color: #a5e92ff6;
+  text-shadow: 2px 2px 5px #2b5c16, 2px -2px 5px #2b5c16, -2px 2px 5px #2b5c16, -2px -2px 5px #2b5c16;
+  letter-spacing: 5px;
+}
+
+.seccionDiscografia__album .album__titulo p {
   text-align: center;
 }
 
-th {
-  background-color: #000000;
+.seccionDiscografia__album .album__info {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccionDiscografia__album .album__info .portadaAlbum {
+  width: 40%;
+  min-width: 275px;
+}
+
+.seccionDiscografia__album .album__info .portadaAlbum img {
+  width: 100%;
+}
+
+.seccionDiscografia__album .album__info .listaAside {
+  width: 20%;
+  height: 90%;
+  list-style-position: inside;
+  border: solid 1px #F2E416;
+  padding: 40px 10px;
+  position: relative;
+}
+
+.seccionDiscografia__album .album__info .listaAside__titulo {
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  top: -15px;
+  background-color: #F2E416;
+  border: solid 1px #F2E416;
+  color: black;
+  font-weight: bold;
+}
+
+.seccionDiscografia__album .album__info .listaAside ul {
+  list-style: none;
+  text-align: center;
+}
+
+.seccionDiscografia__album .album__info .listaAside ol {
+  list-style-type: upper-roman;
+  text-align: center;
+}
+
+.seccionDiscografia__album .album__info .listaAside__amarillo {
   color: #F2E416;
+}
+
+@media only screen and (max-width: 768px) {
+  .seccionDiscografia__album .album__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .seccionDiscografia__album .album__info .listaAside {
+    width: 80%;
+    font-size: 15px;
+  }
+  .seccionDiscografia__album .album__info .portadaAlbum {
+    margin: 20px;
+  }
 }
 
 .fontRoboto {
